@@ -1,0 +1,21 @@
+{ 
+    
+  "people" :[{
+          
+   "name": "Joe",       
+   "online": true        
+          
+  },
+  {
+      
+   "name": "Franck",   
+   "online": false     
+  }
+  
+  ]  
+    
+    
+    
+    
+    
+}     

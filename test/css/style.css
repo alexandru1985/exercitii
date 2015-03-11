@@ -1,0 +1,14 @@
+body { background-color:  #FFFFE3;}
+#tabel{ border-collapse: collapse;}
+#title{background-color: #87CEFA; 
+text-align: center;}
+#buton a{
+    text-decoration:none;
+    color:black;
+    }
+#modifica{
+   width:80px; 
+    } 
+#sterge{
+   width:80px; 
+    }      
