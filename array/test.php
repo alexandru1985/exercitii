@@ -22,3 +22,12 @@ myTest();
 <?php 
 $names = array ('Doe', 50);
 file_put_contents('example.txt',$names);
+
+$handle = fopen('example.txt','r+');
+
+while (!feof($handle)) {
+    
+echo fgets($handle);
+}
+
+fclose($handle);
