@@ -22,6 +22,7 @@ myTest();
 <?php 
 $names = array ('Doe', 50);
 file_put_contents('example.txt',$names);
+file_get_contents('example.txt');
 
 $handle = fopen('example.txt','r+');
 
@@ -31,3 +32,7 @@ echo fgets($handle);
 }
 
 fclose($handle);
+
+$document = file_get_contents('example.txt');
+
+echo $document;
