@@ -1,13 +1,10 @@
 <?php
 
+$cities = array('Bucuresti', 'Cluj', 'Iasi');
 
-$cities = array('Bucuresti','Cluj','Iasi');
+foreach ($cities as $key => $city) {
 
-foreach ($cities as $key=>$city){
-    
     echo $key, '.', $city, '<br>';
-    
-    
 }
 
 //0.Bucuresti
