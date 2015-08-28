@@ -22,6 +22,6 @@ class Milano{
 }
 
 $object = new Milano();
-echo "Locuinte Milano:".$object->getHouses()."<br>";
+echo $object->getHouses();
 $object1 = new Milano();
 echo "Masini Milano:".$object1->getCars()."<br>";
