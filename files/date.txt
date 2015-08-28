@@ -1,0 +1,11 @@
+// interogare sql cu CREATE DATABASE
+$sql = "INSERT INTO date_principale (Oras ,Angajat, Functie, Salariu_baza) VALUES ('$oras','$nume_angajat',"
+    . "'$functie','$salariu')";
+
+
+if(empty($_POST['nume_angajat'])||empty($_POST['salariu']))
+    {   echo '<div id=mesaj1>'; 
+    echo "Mesajul nu a fost trimis! Pentru a putea trimite mesajul trebuie sa completati toate campurile!";
+      echo '</div>';  
+    
+    }
