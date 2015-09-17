@@ -1,10 +1,9 @@
 <?php
-error_reporting(0);
 
 class Download
 {
 
-    const URL_MAX_LENGH = 2050;
+    const URL_MAX_LENGH = 2000;
 
     // clean url
     protected function cleanURL($url)
@@ -35,7 +34,7 @@ class Download
     protected function returnExtension($url)
     {
         if ($this->isURL($url)) {
-            $end = end(preg_split("/[.]+/", $url));
+            $end = basename($url);
             if (isset($end)) {
                 return $end;
             }
@@ -56,7 +55,7 @@ class Download
 
             $return = curl_exec($ch);
             curl_close($ch);
-            $destination = "save/file.$extension";
+            $destination = "save/$extension";
             $file = fopen($destination, "w+");
             fputs($file, $return);
             if (fclose($file)) {

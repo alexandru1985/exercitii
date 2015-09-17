@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persoane>
+    <persoana>
+        <nume> John Doe</nume> 
+        <varsta> 40</varsta>
+    </persoana> 
+      <persoana>
+        <nume> Franck Brown </nume> 
+        <varsta>39 </varsta>
+    </persoana> 
+               
+</persoane>
