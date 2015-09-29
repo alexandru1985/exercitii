@@ -5,7 +5,7 @@ class Download
 
     const URL_MAX_LENGH = 2000;
 
-    // clean url
+
     protected function cleanURL($url)
     {
         if (isset($url)) {
@@ -17,7 +17,7 @@ class Download
         }
     }
 
-    // is url
+
 
     protected function isURL($url)
     {
@@ -29,7 +29,7 @@ class Download
         }
     }
 
-    // return extension
+
 
     protected function returnExtension($url)
     {
@@ -44,7 +44,7 @@ class Download
     public function downloadFile($url)
     {
         if ($this->isURL($url)) {
-            $extension = $this->returnExtension($url);
+          $extension = $this->returnExtension($url);
         }
         if ($extension) {
             $ch = curl_init();
@@ -72,7 +72,7 @@ if (isset($_POST['url'])) {
 }
 ?>
 
-<form action = "http://localhost/joaca/cURLtest/download/index.php" method = "post">
+<form action = "http://localhost/cURLtest/download/index.php" method = "post">
     <input type ="text" name ="url" maxlenght = "2000" />
     <input type ="submit" value ="Download" />
 </form>
