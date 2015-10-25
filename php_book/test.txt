@@ -1,0 +1,1 @@
+a:2:{s:4:"food";s:6:"2 lbs.";s:6:"butter";s:8:"3 sticks";}
