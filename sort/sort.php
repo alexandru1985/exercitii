@@ -12,3 +12,5 @@ $a = "carte";
 $b = "arte";
 
 echo strpos($a, $b);
+
+// Output 1
